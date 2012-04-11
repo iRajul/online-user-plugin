@@ -1,0 +1,148 @@
+
+
+
+.onlineWidget,.panel{
+	
+	/* Styling the widget and the sliding panel at once */
+	
+	background-color:#F9F9F9;
+	border:2px solid #FFFFFF;
+	height:25px;
+	padding:4px 8px;
+	position:relative;
+	width:145px;
+	
+	cursor:pointer;
+	
+	/* CSS3 rules for rounded corners, box and text shadows: */
+	
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	
+	-moz-box-shadow:0 0 3px #CCCCCC;
+	-webkit-box-shadow:0 0 3px #CCCCCC;
+	box-shadow:0 0 3px #CCCCCC;
+	
+	text-shadow:0 2px 0 white;
+}
+
+.onlineWidget:hover{
+	background-color:#fcfcfc;
+}
+
+.onlineWidget:hover .arrow{
+	/* Changing the background image for the green arrow on hover: */
+	background-position:bottom center;
+}
+
+.count{
+	/* The total number of people online div */
+	
+	color:#777777;
+	float:left;
+	font-size:26px;
+	font-weight:bold;
+	margin-top:-3px;
+	text-align:center;
+	width:30px;
+}
+
+.label{
+	/* The online label */
+	
+	float:left;
+	font-size:10px;
+	padding:7px 0 0 7px;
+	text-transform:uppercase;
+}
+
+.arrow{
+	/* The green arrow on the right */
+	
+	background:url(img/arrow.png) no-repeat top center;
+	position:absolute;
+	right:6px;
+	
+	width:25px;
+	height:25px;
+}
+
+.panel{
+	/* The slideout panel */
+	
+	position:absolute;
+	cursor:default;
+	
+	bottom:50px;
+	left:0;
+	height:auto;
+	display:none;
+	margin:-2px;
+	z-index:1000;
+}
+
+.preloader{
+	/* The rotating gif preloader image */
+	display:block;
+	margin:10px auto;
+}
+
+.geoRow{
+	/* The div that contains each country */
+	
+	height:16px;
+	overflow:hidden;
+	padding:0px 0px;
+}
+
+.flag{
+	float: left;
+    margin: 3px 0px;
+}
+
+.country, .people{
+	float:left;
+	font-size:10px;
+	padding:2px;
+}
+
+.country{
+	width:110px;
+	overflow:hidden;
+}
+
+.people{
+	font-weight:bold;
+}
+
+/* The styles below are only necessary for the styling of the demo page: */
+
+
+.onlineWidget{
+	margin:30px auto 0;
+}
+
+.tutorial-check{
+	margin:0 auto;
+	display:block;
+}
+
+
+
+.clear{
+	clear:both;
+}
+
+p.tutInfo{
+	/* The tutorial info on the bottom of the page */
+	padding:10px 0;
+	text-align:center;
+	position:fixed;
+	bottom:0px;
+	background-color:#011D2E;
+	border-top:1px solid #011d2e;
+
+	width:100%;
+}
+
