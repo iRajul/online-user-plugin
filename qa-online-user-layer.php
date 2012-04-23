@@ -30,17 +30,13 @@
 		function head_custom() {
 		
 		if(qa_opt('online_user_active_on')){
-		?>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
-
-		
-		<?php
-		
+		// $this->output_raw('<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>');
 			
-//	$this->output('<script type="text/javascript" SRC="'.qa_html(QA_HTML_THEME_LAYER_URLTOROOT.'who-is-online/widget.js').'"  ></script>');
+		// $this->output('<script type="text/javascript" SRC="'.qa_html(QA_HTML_THEME_LAYER_URLTOROOT.'who-is-online/widget.js').'"  ></script>');
 
-	$this->output('<link rel="stylesheet" type="text/css" href="'.qa_html(QA_HTML_THEME_LAYER_URLTOROOT.'who-is-online/styles.css').'" media="screen" />');
+		define('QA_ONLINE_USERS_DIR',QA_HTML_THEME_LAYER_URLTOROOT);
 
+		$this->output('<link rel="stylesheet" type="text/css" href="'.qa_html(QA_HTML_THEME_LAYER_URLTOROOT.'who-is-online/styles.css').'" media="screen" />');
 
 		?>
 
