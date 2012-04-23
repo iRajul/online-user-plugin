@@ -133,7 +133,7 @@ function geodata()
 	{
 		echo '
 		<div class="geoRow">
-		<div class="flag"><img src="localhost/q2a5/qa-plugin/q2a-online/who-is-online/img/famfamfam-countryflags/'.strtolower($row['country_code']).'.gif" width="16" height="11" /></div>
+		<div class="flag"><img src="'.QA_ONLINE_USERS_DIR.'who-is-online/img/famfamfam-countryflags/'.strtolower($row['country_code']).'.gif" width="16" height="11" /></div>
 		<div class="country" title="'.htmlspecialchars($row['country']).'">'.$row['country'].'</div>
 		<div class="people">'.$row['total'].'</div>
 		</div>
